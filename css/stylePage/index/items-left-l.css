@@ -1,0 +1,28 @@
+.main-items-left-l {
+    width: 366px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Dồn hết sang phải */
+    padding: 0px;
+    height: 339px;
+  }
+  .items-left-l {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Giữ nguyên để nội dung bên phải */
+    padding: 0px;
+    gap: 40px;
+    width: 400px;
+    height: 336px;
+  }
+  .item-1-l {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 30px;
+    width: 366px;
+    height: 259px;
+  }
+  
