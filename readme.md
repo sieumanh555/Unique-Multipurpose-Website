@@ -42,8 +42,8 @@ Thiết bị điện tử:
 
 ## Công nghệ Sử dụng
 
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" alt="HTML5">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" alt="CSS3">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS4iD-8fmvwfxPzLPxmaRKRTbdUVFjDxfvP5EhI9OzjJIv2rv8IU3O4byYYKvqVIi1lmw&usqp=CAU" alt="JS">
 
 ## Hướng dẫn Sử dụng

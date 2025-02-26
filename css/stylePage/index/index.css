@@ -263,11 +263,135 @@
   width: 146px;
   height: 2px;
   left: 0px;
-  top:14px;
+  top: 14px;
   background: linear-gradient(
     90.05deg,
     #b112f4 -9.94%,
     rgba(177, 18, 244, 0) 123.03%
   );
+}
+
+/* đoạn tiếp theo */
+.main-expertise {
+  width: 1170px;
+  height: 930px;
+  left: 135px;
+  background: #f1f5f9;
+  border-radius: 30px;
+}
+.main-expertise-title {
+  font-family: "Poppin" serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  gap: 15px;
+}
+.main-expertise-title h2 {
+  max-width: 678px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+}
+.main-expertise-title p {
+  max-width: 709px;
+  height: 78px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+.main-expertise-items {
+  width: 530px;
+  height: 286px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.main-expertise-items-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 20px 30px;
+}
+.main-expertise-items-1 div span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+.main-expertise-items-1-child {
+  display: flex;
+}
+.main-expertise-items-1-child img {
+  width: auto;
+  margin-right: 12px;
+}
+.main-expertise-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 48px 40px;
+}
+/* đoạn tiếp theo */
+.main-budget {
+  width: 1440px;
+  height: 874px;
+  background: #f2f3f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-budget-button button {
+  width: 110px;
+  height: 40px;
+  border-radius: 52px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 14px;
+  line-height: 20px;
+}
+.main-budget-button {
+  margin-top: 70px;
+  display: flex;
+  gap: 12px;
+}
+.main-budget-container {
+  display: flex;
+  justify-content: flex-start;
+  align-self: start;
+}
+.main-budget-items {
+  width: 730px;
+  height: 464px;
+}
+.main-budget-items-name {
+  width: 730px;
+  height: 170px;
+  background: #ffffff;
+}
+.main-budget-items-nd {
+  width: 730px;
+  height: 294px;
+  background: #eaedf9;
+}
+.main-budget-btitle {
+  width: 141px;
+  height: 40px;
+  background: var(--white);
+  border-radius: 30px;
+  color: var(--blue);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 11px;
+  margin: 15px 30px;
+}
+.main-budget-price{
+  display: flex;
+  margin: 0px 38px;
 }
 /* ---------Main---------- */
