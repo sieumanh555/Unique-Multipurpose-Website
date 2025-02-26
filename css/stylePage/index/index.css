@@ -84,11 +84,12 @@
   align-items: center;
   padding: 18px 50px;
   gap: 10px;
-
+  cursor: pointer;
   width: 226px;
   height: 60px;
   background: #1663f9;
   border-radius: 30px;
+  color: var(--white);
 }
 .header-bar-button-3 {
   box-sizing: border-box;
@@ -97,6 +98,7 @@
   justify-content: center;
   align-items: center;
   padding: 18px 50px;
+  cursor: pointer;
   gap: 10px;
   width: 155px;
   height: 60px;
