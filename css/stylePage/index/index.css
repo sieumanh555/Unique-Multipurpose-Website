@@ -337,7 +337,7 @@
 /* đoạn tiếp theo */
 .main-budget {
   width: 1440px;
-  height: 874px;
+  min-height: 874px;
   background: #f2f3f8;
   display: flex;
   flex-direction: column;
@@ -363,6 +363,8 @@
   display: flex;
   justify-content: flex-start;
   align-self: start;
+  margin: 70px 135px;
+  gap: 30px;
 }
 .main-budget-items {
   width: 730px;
@@ -375,8 +377,9 @@
 }
 .main-budget-items-nd {
   width: 730px;
-  height: 294px;
+  min-height: 294px;
   background: #eaedf9;
+  padding-bottom: 10px;
 }
 .main-budget-btitle {
   width: 141px;
@@ -393,5 +396,65 @@
 .main-budget-price{
   display: flex;
   margin: 0px 38px;
+}
+.main-budget-items-nd-list{
+  display: flex;
+  gap: 12px;
+}
+.main-budget-items-nd-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 130px;
+  padding: 45px 42px;
+}
+.main-budget-items-nd-list img{
+  width: auto;
+  
+}
+.main-budget-items-nd-list span{
+  font-size: 18px;
+  font-weight: 400;
+  color: #81879D;
+}
+.main-budget-items-nd-button {
+  width: 140px;
+  height: 44px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #5F45D9, #F961D8, #FE9E66);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  margin: -5px 42px;
+}
+
+.main-budget-items-nd-button:hover {
+  opacity: 0.8;
+}
+.main-budget-items-2{
+  width: 410px;
+  height: 464px;
+}
+.main-budget-items-name-2{
+  width: 410px;
+  height: 170px;
+  background: #ffffff;
+}
+.main-budget-items-nd-2{
+  width: 410px;
+  min-height: 294px;
+  background: #eaedf9;
+  padding-bottom: 10px;
+}
+.main-budget-items-nd-container-2{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px 130px;
+  padding: 45px 42px;
 }
 /* ---------Main---------- */
