@@ -336,14 +336,13 @@
 }
 /* đoạn tiếp theo */
 .main-budget {
-  width: 1440px;
-  min-height: 874px;
+  width: 1897px; /* Chiều rộng full màn hình */
+  min-height: 874px; /* Chiều cao tối thiểu */
   background: #f2f3f8;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: center; /* Căn giữa theo chiều dọc */
+  align-items: center; /* Căn giữa theo chiều ngang */
 }
 .main-budget-button button {
   width: 110px;
@@ -361,10 +360,9 @@
 }
 .main-budget-container {
   display: flex;
-  justify-content: flex-start;
-  align-self: start;
-  margin: 70px 135px;
+  align-self: center;
   gap: 30px;
+  margin-top: 40px;
 }
 .main-budget-items {
   width: 730px;
@@ -393,34 +391,33 @@
   padding: 11px;
   margin: 15px 30px;
 }
-.main-budget-price{
+.main-budget-price {
   display: flex;
   margin: 0px 38px;
 }
-.main-budget-items-nd-list{
+.main-budget-items-nd-list {
   display: flex;
   gap: 12px;
 }
-.main-budget-items-nd-container{
+.main-budget-items-nd-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px 130px;
   padding: 45px 42px;
 }
-.main-budget-items-nd-list img{
+.main-budget-items-nd-list img {
   width: auto;
-  
 }
-.main-budget-items-nd-list span{
+.main-budget-items-nd-list span {
   font-size: 18px;
   font-weight: 400;
-  color: #81879D;
+  color: #81879d;
 }
 .main-budget-items-nd-button {
   width: 140px;
   height: 44px;
   border-radius: 30px;
-  background: linear-gradient(90deg, #5F45D9, #F961D8, #FE9E66);
+  background: linear-gradient(90deg, #5f45d9, #f961d8, #fe9e66);
   border: none;
   color: white;
   font-size: 16px;
@@ -436,25 +433,247 @@
 .main-budget-items-nd-button:hover {
   opacity: 0.8;
 }
-.main-budget-items-2{
+.main-budget-items-2 {
   width: 410px;
   height: 464px;
 }
-.main-budget-items-name-2{
+.main-budget-items-name-2 {
   width: 410px;
   height: 170px;
   background: #ffffff;
 }
-.main-budget-items-nd-2{
+.main-budget-items-nd-2 {
   width: 410px;
   min-height: 294px;
   background: #eaedf9;
   padding-bottom: 10px;
 }
-.main-budget-items-nd-container-2{
+.main-budget-items-nd-container-2 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px 130px;
   padding: 45px 42px;
+}
+/* main text box */
+.main-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+  width: 1170px;
+  height: 383px;
+}
+.main-text-box-container {
+  width: 1170px;
+  height: 331px;
+  background: linear-gradient(#3F56EE,#5094FA);
+  border-radius: 20px;
+  display: flex;
+}
+/* đoạn tiếp theo */
+.team-section {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.team-section-text{
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+.team-section h2 {
+  font-size: 50px;
+  color: #333;
+  line-height: 60px;
+  font-weight: 700;
+}
+.team-section p {
+  width: 481px;
+  height: 45px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.team-section h2 span {
+  color: blue;
+}
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  row-gap: 48px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.team-member {
+  width: 325px;
+  height: 385px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.team-member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1663F9;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.3s;
+}
+.team-member:hover .team-info {
+  opacity: 0.5;
+}
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+}
+/* đoạn tiếp theo */
+.main-blog{
+  max-width: 1140px;
+  height: 506px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 70px;
+}
+.blog-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  min-height: 252px;
+  gap: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+}
+.blog-card img {
+  width: 100%;
+  height: 252px;
+  object-fit: cover;
+}
+.blog-content {
+  text-align: left;
+}
+.tag {
+  display: inline-block;
+  background: gold;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.date {
+  font-size: 12px;
+  color: gray;
+  margin-left: 10px;
+}
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .blog-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+/* Đoạn tiếp theo */
+.main-hero{
+  width: 1170x;
+  height: 483px;
+}
+.hero-container {
+  background: linear-gradient(135deg, #2d9cdb, #8e44ad);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 80px 156px;
+  gap: 40px;
+  border-radius: 15px;
+  max-width: auto;
+  height: 483px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-title {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-weight: 700;
+  line-height: 42px;
+  width: 858px;
+  height: 126px;
+  text-wrap: wrap;
+}
+
+.hero-text {
+  font-size: 14px;
+  opacity: 0.8;
+  font-weight: 400;
+  line-height: 24px;
+  width: 692px;
+  height: 91px;
+  margin-bottom: 25px;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  color: var(--dark);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.hero-button:hover {
+  background: #e0e0e0;
+}
+
+.hero-button svg {
+  width: 16px;
+  height: 16px;
+  fill: #2d9cdb;
 }
 /* ---------Main---------- */
