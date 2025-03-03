@@ -1,0 +1,252 @@
+/* ---------header---------- */
+
+.header-bar {
+  max-width: 1240px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 100px;
+}
+.header-bar-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  max-width: 665px;
+  height: 24px;
+}
+.header-bar-menu a {
+  color: var(--dark);
+  transition: background 0.3s, color 0.3s;
+}
+.header-bar-button-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 50px;
+  gap: 10px;
+  color: var(--white);
+  width: 214px;
+  height: 60px;
+  background: var(--blue);
+  border-radius: 30px;
+}
+
+.header-bar-button-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 50px;
+  gap: 10px;
+  cursor: pointer;
+  width: 226px;
+  height: 60px;
+  background: #1663f9;
+  border-radius: 30px;
+  color: var(--white);
+}
+.header-bar-button-3 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 50px;
+  cursor: pointer;
+  gap: 10px;
+  width: 155px;
+  height: 60px;
+  border: 1px solid #1f2326;
+  border-radius: 60px;
+  background-color: transparent;
+}
+.header-bar-title {
+  position: absolute;
+  width: 100%;
+  max-width: 807px;
+  height: auto; /* Bỏ height cố định để nó tự điều chỉnh */
+  left: 50%;
+  top: 134px;
+  transform: translateX(-50%);
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(32px, 5vw, 60px); /* Font chữ co dãn theo kích thước màn hình */
+  line-height: 1.2;
+  text-align: center;
+  color: #1f2326;
+}
+.header-bar-gradient-text {
+  background: linear-gradient(45deg, var(--pink), blue);
+  background-clip: text;
+  -webkit-background-clip: text; /* Hỗ trợ cho Chrome, Safari */
+  -moz-background-clip: text; /* Hỗ trợ cho Firefox (ít cần thiết) */
+  -ms-background-clip: text; /* Hỗ trợ cho IE (hiếm khi hoạt động) */
+  -o-background-clip: text; /* Hỗ trợ cho Opera */
+  -webkit-text-fill-color: transparent;
+}
+.header-bar-text {
+  position: absolute;
+  max-width: 715px;
+  width: 90%;
+  height: auto;
+  left: 50%;
+  top: 370px;
+  transform: translateX(-50%);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(14px, 1.8vw, 18px); /* Co dãn theo màn hình */
+  line-height: 1.4;
+  text-align: center;
+  color: #1f2326;
+}
+
+.header-bar-button-stack {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Căn giữa các nút */
+  gap: 24px;
+  position: absolute;
+  width: 405px;
+  height: 60px;
+  left: 50%;
+  top: 450px;
+  transform: translateX(-50%);
+}
+.header-bar-container {
+  position: absolute;
+  width: 90%;
+  max-width: 1170px;
+  height: auto;
+  left: 50%;
+  top: 649px;
+  transform: translateX(-50%);
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 40px; /* Thêm padding để nội dung không bị dính sát */
+}
+
+.header-bar-children-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap; /* Xuống dòng nếu không đủ chỗ */
+  gap: 30px;
+  position: relative;
+}
+
+.header-bar-icon {
+  display: flex;
+  flex-direction: column;
+  width: 246px;
+  height: auto;
+  border: 1px solid var(--white);
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.header-bar-text-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  padding: 130px 20px;
+}
+
+.header-bar-icon-children {
+  display: flex;
+  width: 100%;
+  max-width: 1051px;
+  height: auto;
+  justify-content: center;
+}
+
+.header-bar-menu-icon {
+  display: none;
+  font-size: 36px;
+  color: black;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background: #333;
+  color: white;
+  padding: 20px;
+  transition: left 0.3s ease;
+}
+.mobile-menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+}
+.mobile-menu .close-btn {
+  font-size: 24px;
+  cursor: pointer;
+  text-align: right;
+}
+
+@media screen and (max-width: 1280px) {
+  .header-bar-button-1 {
+    display: none;
+  }
+  .header-bar-title {
+    max-width: 90%; /* Giữ độ rộng phù hợp khi màn hình nhỏ */
+    top: 100px; /* Điều chỉnh vị trí cao hơn một chút */
+  }
+  .header-bar-text {
+    top: 250px; /* Dịch lên để không bị trễ */
+    max-width: 80%;
+  }
+
+  .header-bar-button-stack {
+    width: 90%; /* Co dãn linh hoạt */
+    flex-wrap: wrap; /* Nếu màn hình quá nhỏ, các nút sẽ xuống dòng */
+    top: 350px;
+    gap: 16px; /* Khoảng cách nhỏ hơn khi màn hình nhỏ */
+  }
+}
+@media screen and (max-width: 1280px) {
+  .header-bar-menu {
+    display: none;
+  }
+  .header-bar-menu-icon {
+    display: block;
+  }
+  .mobile-menu {
+    right: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header-bar-menu {
+    display: none;
+  }
+  .header-bar-menu-icon {
+    display: block;
+  }
+  .mobile-menu {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 375px) {
+  
+}
+/* ---------header---------- */

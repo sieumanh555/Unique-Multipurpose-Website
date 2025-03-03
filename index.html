@@ -11,7 +11,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- or -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
     <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/stylePage/index/reponsive.css" />
+    <link rel="stylesheet" href="css/stylePage/header.css" />
     <link rel="stylesheet" href="css/stylePage/footer.css" />
     <link rel="stylesheet" href="css/stylePage/index/index.css" />
     <link rel="stylesheet" href="css/stylePage/index/items-left-l.css" />
@@ -19,12 +30,13 @@
   </head>
   <body>
     <header>
-      <div class="bg-1"></div>
+      <div classS="bg-1"></div>
       <div class="bg-2"></div>
       <div class="bg-3"></div>
       <div class="bg-4"></div>
       <div class="header-bar">
         <div><img src="image/logo.svg" width="119" height="36" alt="" /></div>
+        <div class="header-bar-menu-icon"><i class="bx bx-menu"></i></div>
         <div class="header-bar-menu">
           <a href="">Home</a>
           <a href="">Services</a>
@@ -35,6 +47,15 @@
         </div>
         <div class="header-bar-button">
           <button class="header-bar-button-1">Start a Project</button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="close-btn" onclick="closeMenu()">&times;</div>
+          <a href="">Home</a>
+          <a href="">Services</a>
+          <a href="">Expertise</a>
+          <a href="">Cases</a>
+          <a href="">Pricing</a>
+          <a href="">Company</a>
         </div>
       </div>
       <div>
@@ -681,7 +702,16 @@
           </div>
           <a href="#" class="hero-button">
             Join the team
-            <div style="background-color: #1663f9; width: 28px; height: 28px; border-radius: 50%; padding: 5px; color: white;">
+            <div
+              style="
+                background-color: #1663f9;
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                padding: 5px;
+                color: white;
+              "
+            >
               <i class="fa-solid fa-arrow-right"></i>
             </div>
           </a>
@@ -803,4 +833,41 @@
       </div>
     </footer>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuIcon = document.querySelector(".header-bar-menu-icon");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const closeBtn = document.querySelector(".close-btn");
+
+      if (menuIcon && mobileMenu && closeBtn) {
+        // Mặc định ẩn menu icon trên màn hình lớn và ẩn mobile menu
+        menuIcon.style.display = "none";
+        mobileMenu.style.right = "-250px";
+
+        // Hiện menu icon khi màn hình nhỏ
+        function checkScreenSize() {
+          if (window.innerWidth <= 1280) {
+            menuIcon.style.display = "block";
+          } else {
+            menuIcon.style.display = "none";
+            mobileMenu.style.right = "-250px"; // Đóng menu khi quay lại màn hình lớn
+          }
+        }
+
+        // Kiểm tra kích thước màn hình khi tải trang và khi resize
+        checkScreenSize();
+        window.addEventListener("resize", checkScreenSize);
+
+        menuIcon.addEventListener("click", function () {
+          mobileMenu.style.right = "0";
+          menuIcon.style.display = "none";
+        });
+
+        closeBtn.addEventListener("click", function () {
+          mobileMenu.style.right = "-250px";
+          menuIcon.style.display = "block";
+        });
+      }
+    });
+  </script>
 </html>
