@@ -1,0 +1,380 @@
+.bg-1 {
+  position: absolute;
+  width: 465px;
+  height: 463px;
+  right: -115px;
+  top: -172px;
+  background: #f8a6f0;
+  filter: blur(250px);
+  border-radius: 231.5px;
+}
+.bg-2 {
+  position: absolute;
+  width: 625.19px;
+  height: 351.66px;
+  left: 592px;
+  top: 570px;
+  background: #f8d997;
+  filter: blur(148.009px);
+  border-radius: 244.214px;
+}
+.bg-3 {
+  position: absolute;
+  width: 1362.54px;
+  height: 766.44px;
+  left: -753px;
+  top: 331px;
+  background: #51b4fa;
+  filter: blur(148.009px);
+  border-radius: 532.247px;
+}
+.charity-title {
+  text-align: center;
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.charity-title h2 {
+  font-size: 50px;
+  line-height: 60px;
+  max-width: 810px;
+  width: 100%;
+}
+nav {
+  width: 100%;
+  min-height: auto;
+  margin: 120px auto;
+  position: relative;
+  overflow: hidden;
+  background-color: #F1F5F9;
+  padding: 100px;
+}
+.charity-box {
+  width: 100%;
+}
+.charity-box-lelft-items img {
+  width: 20px;
+  height: 20px;
+}
+.charity-box-lelft {
+  width: 50%;
+}
+.charity-box-lelft-items span {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.charity-box-lelft-items {
+  display: flex;
+  gap: 19px;
+}
+.charity-box-lelft {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.charity-box {
+  display: flex;
+  gap: 102px;
+}
+.charity-box-right {
+  width: 50%;
+}
+.charity-box-right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.charity-video video {
+  width: 100%;
+  height: 61vh;
+  border-radius: 20px;
+}
+.charity-user{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 60px;
+    row-gap: 24px;
+}
+.charity-user-items-img img {
+  width: 100%;
+}
+.charity-user-items {
+  display: flex;
+  max-width: 370px;
+  gap: 29px;
+  border: 1px solid #d9dfe5;
+  padding: 20px;
+  align-items: center;
+  border-radius: 12px;
+}
+.charity-user-items:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.charity-user-items-img {
+  max-width: 60px;
+  height: 60px;
+  background-color: #d9d9d9;
+  position: relative;
+  overflow: hidden;
+  padding: 5px 2px 0px 5px;
+  border-radius: 50%;
+}
+.charity-user-items-text {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.charity-user-items-number {
+  background-color: orange;
+  max-width: 24px;
+  height: 24px;
+  padding: 2px 9px;
+  border-radius: 50%;
+  margin-left: 59px;
+}
+.charity-user-items-number span {
+  width: 100%;
+  height: auto;
+  color: white;
+  font-size: 16px;
+}
+.chairty-main-hinh{
+  height: 302px;
+  width: 100%;
+}
+.chairty-main-hinh img{
+  width: 100%;
+}
+.chairty-main-text{
+  text-align: center;
+  max-width: 555px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #81879D;
+}
+.chairty-main-items{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.chairty-main-box{
+  display: flex;
+  gap: 120px;
+  margin: 44px 0px;
+}
+.chairty-main-box-text{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 85px 154px;
+  margin: 47px 0px;
+}
+.testimonials {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.testimonials h2 {
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.testimonials p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quote {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.designation {
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Thêm các màu sắc đặc trưng */
+.testimonial:nth-child(1) .author {
+  color: orange;
+}
+
+.testimonial:nth-child(2) .author {
+  color: blue;
+}
+
+testimonial:nth-child(3) .author {
+  color: deeppink;
+}
+.news {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.news h2 {
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.news-item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.news-header {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.news-item h3 {
+  color: #333;
+  font-size: 1.2em;
+}
+
+.view-all {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.donation {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.donation h2 {
+  color: #000;
+}
+.volunteer {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer h2 {
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.volunteer p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.join-team {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.join-team:hover {
+  background-color: #e0e0e0;
+}
+.container {
+  display: flex;
+  height: 483px;
+  width: 1170px;
+  background: linear-gradient(#9A40E4,#5C70F4);
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.image-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-side img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain; /* Điều chỉnh cách hình ảnh vừa với khung */
+}
+
+.content-side {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  gap: 34px;
+  flex-direction: column;
+}
+
+.content-side h2 {
+  margin-bottom: 20px;
+}
+.container-charity-button{
+  background-color: #FFFFFF;
+  padding: 16px;
+  font-size: 18px;
+  border-radius: 20px;
+  max-width: 205px;
+  height: 60px;
+  font-weight: 800;
+}

@@ -143,10 +143,12 @@
 .header-bar-icon {
   display: flex;
   flex-direction: column;
+
   width: 246px;
   height: auto;
   border: 1px solid var(--white);
-  align-items: center;
+  justify-content:flex-start;
+  align-items: flex-start;
   gap: 20px;
   padding: 30px;
 }
@@ -165,6 +167,7 @@
   width: 100%;
   max-width: 1051px;
   height: auto;
+  gap:100px;  
   justify-content: center;
 }
 
