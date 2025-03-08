@@ -1,0 +1,251 @@
+.bg-1 {
+  position: absolute;
+  width: 465px;
+  height: 463px;
+  right: -115px;
+  top: -172px;
+  background: #f8a6f0;
+  filter: blur(250px);
+  border-radius: 231.5px;
+}
+.bg-2 {
+  position: absolute;
+  width: 625.19px;
+  height: 351.66px;
+  left: 592px;
+  top: 570px;
+  background: #f8d997;
+  filter: blur(148.009px);
+  border-radius: 244.214px;
+}
+.bg-3 {
+  position: absolute;
+  width: 1362.54px;
+  height: 766.44px;
+  left: -753px;
+  top: 331px;
+  background: #470244;
+  filter: blur(148.009px);
+  border-radius: 532.247px;
+}
+.header-bar-logo {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 40px;
+}
+.header-img {
+  max-width: 240px;
+  height: 39px;
+  display: flex;
+}
+.header-text-i p {
+  font-size: 16px;
+  font-weight: 200;
+}
+.header-text-i {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header-img-text {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+nav {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  height: auto;
+}
+
+/* ======= SERVICE SECTION ======= */
+.service-section {
+  margin-bottom: 50px;
+  top: -5px;
+  background-color: white;
+  position: relative;
+  z-index: 9999;
+  padding: 46px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+.service-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  text-align: start;
+}
+
+.service-card {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .icon img {
+  width: 88px;
+}
+
+.service-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.service-card a {
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ======= BENEFITS SECTION ======= */
+.benefits-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.benefits-text {
+  max-width: 500px;
+}
+
+.benefits-text h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.benefits-text p {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.benefits-text ul {
+  list-style: none;
+}
+
+.benefits-text ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.benefits-image{
+    /* clip-path: inset(0 0 20% 0); */
+    position: relative;
+    background: linear-gradient(#8058ED,#D95ECC);
+}
+
+.benefits-image img {
+  width: 300px;
+  border-radius: 10px;
+  position: relative;
+  transform: translateY(-50px); /* Đẩy ảnh lên trên */
+}
+
+/* ======= BASKETBALL SECTION ======= */
+.basketball-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.basketball-section{
+    text-align: center;
+    margin-top: 120px;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+.basketball-section p {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+/* ======= POSITIONS CONTAINER ======= */
+.positions-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+  }
+
+/* ======= POSITION BOXES ======= */
+.position-box {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 220px;
+}
+
+.position-box h3 {
+  font-size: 16px;
+}
+
+.position-box p {
+  font-size: 13px;
+  color: gray;
+}
+
+/* ======= MÀU SẮC TỪNG BOX ======= */
+.blue {
+  background: #e3f2fd;
+} /* Màu xanh dương nhạt */
+.red {
+  background: #ffebee;
+} /* Màu đỏ nhạt */
+.light-blue {
+  background: #e0f7fa;
+} /* Màu xanh nhạt */
+.pink {
+  background: #fce4ec;
+} /* Màu hồng nhạt */
+.orange {
+  background: #fff3e0;
+} /* Màu cam nhạt */
+
+/* ======= PLAYER IMAGE ======= */
+.player-image {
+    background: linear-gradient(#8058ED, #D95ECC);
+    border-top-left-radius: 70% 50%;
+    border-top-right-radius: 70% 50%;
+  }
+  
+  .player-image img {
+    width: 280px;
+    position: relative;
+    z-index: 10; /* Đảm bảo ảnh nằm trên nền */
+  }
+  
