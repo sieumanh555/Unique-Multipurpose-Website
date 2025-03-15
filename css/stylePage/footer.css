@@ -42,7 +42,7 @@ footer {
 }
 .footer-bottom {
   display: flex;
-  width: 1440px;
+  width: 100%;
   height: 38px;
   justify-content: space-between;
   align-items: center;

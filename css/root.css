@@ -25,11 +25,23 @@ body{
     position: relative;
     max-width: 1440px;
     background: #FFFFFF;
-    font-family: "Sora", serif;
+    font-family: "Poppins", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     margin: 0 auto;
+}
+button{
+    font-family: "Poppins", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+@media (min-width: 1920px) {
+    body{
+        position: relative;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
 }
 img{
     width: 100%;

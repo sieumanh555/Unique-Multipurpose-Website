@@ -35,7 +35,6 @@
   position: absolute;
   width: 671px;
   height: 377.44px;
-  right: -113px;
   top: 375px;
   background: #f8a6f0;
   filter: blur(148.009px);
@@ -43,19 +42,22 @@
 }
 
 /* ---------Main---------- */
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   padding: 0px;
   gap: 100px;
-  position: absolute;
-  width: 90%;
+  width: 100%;
   max-width: 1170px;
-  height: auto; /* Để nó tự co giãn theo nội dung */
-  left: 50%;
-  top: 1375px;
-  transform: translateX(-50%);
+  margin-top: 1375px;
 }
 
 .main-items {
@@ -123,7 +125,7 @@
 
 /* đoạn tiếp theo */
 .main-expertise {
-  width: 90%;
+  width: 100%;
   max-width: 1170px;
   height: auto;
   background: #f1f5f9;
@@ -191,12 +193,13 @@
 }
 
 .main-expertise-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   justify-content: center; /* Căn giữa khi màn hình nhỏ */
   gap: 30px;
   margin: 48px auto;
   max-width: 100%;
+  padding: 0px 40px;
 }
 
 /* đoạn tiếp theo */
@@ -230,8 +233,8 @@
 }
 
 .main-budget-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 70% 30%;
   justify-content: center;
   gap: 30px;
   margin-top: 40px;
@@ -239,7 +242,6 @@
 
 .main-budget-items {
   width: 100%;
-  max-width: 730px;
   height: auto;
 }
 
@@ -377,7 +379,6 @@
   object-fit: cover;
 }
 .team-info {
-  position: absolute;
   width: 100%;
   height: 100%;
   background-color: #1663f9;

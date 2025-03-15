@@ -30,9 +30,10 @@
 }
 .header-bar-logo {
   display: grid;
-
   grid-template-columns: 1fr 1fr 1fr;
   padding: 40px;
+  margin: 0 50px;
+  gap: 40px;
 }
 .header-img {
   max-width: 240px;
