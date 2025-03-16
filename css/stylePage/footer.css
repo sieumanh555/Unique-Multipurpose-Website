@@ -14,7 +14,15 @@ footer {
   margin-top: 120px;
   border-bottom: 1px solid #f0f0f0;
   padding-bottom: 86px;
-
+}
+@media (max-width:1280px) {
+  .footer-main {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .footer-product{
+    margin: 0;
+  }
 }
 .footer-product {
   margin-left: 123px;

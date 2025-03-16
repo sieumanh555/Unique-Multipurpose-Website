@@ -5,7 +5,7 @@ main {
   width: 100%;
   flex-direction: column;
   gap: 170px;
-  z-index: 0;
+  z-index: -1;
   position: relative;
 }
 .bg-1 {
@@ -17,7 +17,6 @@ main {
   background: #f8a6f0;
   filter: blur(250px);
   border-radius: 231.5px;
-  z-index: -9999;
 }
 .bg-2 {
   position: absolute;
@@ -28,7 +27,6 @@ main {
   background: #f8d997;
   filter: blur(148.009px);
   border-radius: 244.214px;
-  z-index: -9999;
 }
 .bg-3 {
   position: absolute;
@@ -37,9 +35,9 @@ main {
   left: -753px;
   top: 331px;
   background: #51b4fa;
+  overflow: hidden;
   filter: blur(148.009px);
   border-radius: 532.247px;
-  z-index: -9999;
 }
 .charity-title {
   text-align: center;
@@ -82,7 +80,7 @@ main {
   }
 }
 .products-main {
-  background-color: #7e2f2f;
+  background-color: #FFFFFF;
   max-width: 1170px;
   width: 100%;
   border-radius: 30px;
@@ -292,7 +290,6 @@ h1 {
   background: #a7d5ff;
   position: absolute;
   left: -90px;
-  z-index: -1;
   border-radius: 10px;
 }
 
@@ -699,6 +696,10 @@ h3 {
   .features-container{
     display: flex;
     flex-direction: column;
+    margin-left: -80px;
+  }
+  .features-maintain{
+    width: 100%;
   }
 }
 .feature-box img {
@@ -748,7 +749,16 @@ p {
   gap: 20px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
-
+.banner h2{
+  font-size: 50px; 
+  width: 858px
+}
+@media (max-width: 1080px) {
+  .banner h2{
+    font-size: 24px;
+    width: 400px;
+  }
+}
 .btn {
   background-color: white;
   color: black;

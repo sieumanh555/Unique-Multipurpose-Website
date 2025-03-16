@@ -5,7 +5,7 @@ header {
   left: 0;
   width: 100%;
   background-color: #fff; /* Màu nền */
-  z-index: 1000; /* Giúp header nổi trên các phần tử khác */
+  z-index: -2; /* Giúp header nổi trên các phần tử khác */
   padding: 10px 20px;
 }
 .header-bar {
