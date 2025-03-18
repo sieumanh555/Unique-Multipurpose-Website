@@ -561,6 +561,12 @@ main{
     padding: 30px 15px;
   }
 
+  @media (max-width:1280px) {
+    .main-expertise-items div h5{
+      font-size: 18px;
+    }
+  }
+
   .main-expertise-title h2 {
     font-size: 40px;
     line-height: 50px;
