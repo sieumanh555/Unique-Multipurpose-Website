@@ -66,7 +66,6 @@ main{
   align-items: center;
   justify-content: space-between; /* Canh đều khoảng cách */
   padding: 0px;
-  max-height: 585px;
   width: 100%;
 }
 
@@ -97,6 +96,14 @@ main{
   gap: 30px;
   width: 100%;
   height: auto;
+}
+
+@media (max-width:1280px) {
+  .item-1 {
+    justify-content: flex-start;
+    text-align: start;
+    margin-left: 10px;
+  }
 }
 
 .item-2 {
@@ -531,8 +538,9 @@ main{
 @media screen and (max-width: 1280px) {
   .main-container {
     gap: 50px; /* Giảm khoảng cách giữa các mục */
-    padding-top: 300px; /* Thay vì margin-top để tránh lỗi */
     width: 100%; /* Đảm bảo hiển thị tốt trên màn hình nhỏ */
+    margin-top: 1920px;
+    text-align: center;
   }
 
   .main-items {
@@ -542,13 +550,12 @@ main{
 
   .main-items-left,
   .main-items-right {
+    margin: 0;
     width: 100%; /* Chiếm toàn bộ chiều rộng khi màn hình nhỏ */
-    text-align: center;
-    align-items: center;
   }
 
-  .main-items-right {
-    margin-left: 0; /* Loại bỏ margin trái */
+  .main-items-right img {
+    object-fit: cover;
   }
   .main-expertise {
     padding: 30px 15px;

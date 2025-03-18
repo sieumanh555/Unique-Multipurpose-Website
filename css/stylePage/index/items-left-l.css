@@ -6,6 +6,15 @@
     padding: 0px;
     height: 339px;
   }
+  @media (max-width:1280px) {
+    .main-items-left-l {
+      text-align: start;
+    }
+    .items-left-l {
+      margin-right: -40px;
+
+    }
+  }
   .items-left-l {
     display: flex;
     flex-direction: column;

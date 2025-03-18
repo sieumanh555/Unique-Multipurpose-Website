@@ -57,10 +57,11 @@ Thiết bị điện tử:
 * `css/`: Thư mục chứa file CSS.
 * `images/`: Thư mục chứa ảnh sản phẩm.
 
-## Tác giả
+## Tiến độ
 
-HY PHẠM VIẾT Á NHA
-
-## Bản quyền
-
-HY PHẠM LUÔN Á
+* `Agency`: Giao diện 100% - Responsive (40%)
+* `Sports`: Giao diện 100% - Responsive (Chưa làm)
+* `Restaurants`: Giao diện 100% (Chưa hợp màu) - Responsive (40%)
+* `Education`: Giao diện 100% - Responsive (100%)
+* `Ecommerce`: Giao diện 100% - Responsive (80%)
+* `Charity`: Giao diện 100% - Responsive (30%)

@@ -1,3 +1,9 @@
 .main-items-right-l {
     margin-right: 70px;
   }
+
+@media (max-width:1280px) {
+  .main-items-right-l {
+    margin-right: 0px;
+  }
+}

@@ -233,7 +233,9 @@ header {
     display: none;
   }
   .header-bar-menu-icon {
-    display: block;
+    position: relative;
+    right: -100px;
+    cursor: pointer;
   }
   .mobile-menu {
     right: 0;
@@ -242,6 +244,9 @@ header {
 @media screen and (max-width: 1024px) {
   .header-bar-menu {
     display: none;
+  }
+  .header-bar{
+    margin: 0px 20px;
   }
   .header-bar-menu-icon {
     display: block;
